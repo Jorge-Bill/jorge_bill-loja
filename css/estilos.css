@@ -3,7 +3,7 @@
 body {
     padding-top: 50px;
     font-family: sans-serif;
-    background-color: #fdfdff;
+    background-color: #fff;
 
 }
 
@@ -13,10 +13,14 @@ body {
     text-indent: -9999px;
 }
 
+.navbar-inverse {
+   background-color: #000; 
+   color: #fff;
+   
+}
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-  color: #048f88;
-  background-color: #fff;
+  
   box-shadow: 0 0 2px rgba(0,0,0,0.3);
 }
 
@@ -34,7 +38,7 @@ body {
 
 
 #home{
-    background: url(../imagens/BlueSpace.png) no-repeat fixed;
+    background: url(../img/BlueSpace.png) no-repeat fixed;
    /* opacity: 0.8;*/
     display: inline-block;
     position: relative;
@@ -145,9 +149,11 @@ body {
     line-height: 2em;
 }
 
-.form{
+form{
     background-color:#fff;
     padding-bottom: 3em;
+    letter-spacing: .1em;
+    line-height: 1.4em;
 }
 
 .form .form-group input{
@@ -189,52 +195,14 @@ body {
 } 
 
 
-.prod{
-    border-radius: 0px;
-    box-shadow:0 1px 3px rgba(0,0,0,.12);
-}
-
-.prod .img-circle{
-    box-shadow:0 1px 3px rgba(0,0,0,.12);
-}
-
-.prod .caption{
-    background-image: url(../imagens/background.png);
-    background-color: #113662;
-    border-top-style: solid;
-    border-top-color: gray;
-    border-top-width: .2em;
-}
-
-.prod h3{
-   text-transform: uppercase;
-   letter-spacing: .1em;
-  /*  box-shadow:0 1px 3px rgba(0,0,0,.12);*/
-}
-
-.prod h4 {
-   
-}
-
-.prod p:first-letter{
+p:first-letter{
     text-transform: capitalize;
-}
-
-.prod p{
-    color: #fff;
-    letter-spacing: .1em;
-    line-height: 1.5em;
-    font-size: 1.2em;
-}
-
-.img-prod {
-  
 }
 
 
 footer{
 
-    background-color: #3b3838;
+    background-color: #385D7A;
     box-shadow:0 1px 3px rgba(0,0,0,.12);
     color: #fff;
     clear: both;
@@ -259,7 +227,7 @@ footer p{
 }
 
 .footer-estilo{
-    background-color: #101010;
+    background-color: #000;
     color: #fff;
     text-transform: uppercase;
     line-height: 1.2em;

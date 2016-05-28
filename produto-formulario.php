@@ -8,21 +8,55 @@ verificaUsuario();
     $usado = "";
     $categorias = listaCategorias ($conexao);
 ?>
-    <div class=" col-xs-12 col-sm-12 col-md-6 col-lg-6">
-    <h1>Formulário de Produto</h1>
-    <form action="adiciona-produto.php" method="post">
+
+<!-- breadcrumb lifestyle -->
+<div class="row wrapper border-bottom white-bg page-heading">
+    <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+        <h2>Cadastrar Produtos</h2>
+            <ol class="breadcrumb">
+                <li>
+                    <a href="index.php">Home</a>
+                </li>
+                <li>
+                    <a>E-commerce</a>
+                </li>
+                <li class="active">
+                    <a href="produto-formulario.php"><strong>Cadastrar Produto</strong></a>
+                </li>
+
+            </ol>
+        </div>
+        <div class="col-lg-2">
+
+        </div>
+</div>
+<!-- breadcrumb lifestyle -->
+
+
+<div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 animated fadeInRight">
+    <br/>
+     <form action="adiciona-produto.php" method="post">
         <div class="form-group">
            
            <?php include("produto-formulario-base.php"); ?>
 
             
                 <div class="form-group">
-                    <input class="btn btn-success" type="submit" value="Cadastrar">
+                    <input class="btn btn-primary" type="submit" value="Cadastrar">
                 </div>
             
         </div>
     </form>
+
+    <div class="ibox-footer">
+            <span class="pull-right">
+            Geek Space - <i class="fa fa-clock-o"></i> <?php echo date("d/m/y"); ?> 
+            </span>
+            <strong>"Fear leads to anger, Anger leads to hate, Hate leads to suffering" </strong>
     </div>
-    <?php
+
+</div>
+
+<?php
     include("rodape.php");
 ?>

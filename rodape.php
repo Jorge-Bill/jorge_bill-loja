@@ -7,24 +7,24 @@
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-md-offset-2 col-lg-offset-2" id="foot">
                             <h3>Email</h3>
-                            <div class="caption">
-                                <p class="glyphicon glyphicon-envelope"> vendas@gmail.com</p>
-                            </div>
+                            
+                                <p class="glyphicon glyphicon-envelope"> geekspace@gmail.com</p>
+                           
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="foot">
                             <h3>Telefones</h3>
-                            <div class="caption">
+                            
                                 <p class="glyphicon glyphicon-phone-alt"> (15) 3244-6885 | </p>
                                 <p class="glyphicon glyphicon-phone"> (11) 99714-7295 </p>
-                            </div>
+                          
                         </div>
                         <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="foot">
                             <h3>Redes Sociais</h3>
-                            <div class="caption">
-                              <span>       
-                    <a class="" href="#" target="_blank">Teste</a>
-                            </span>   
-                            </div>
+                            <br/>
+                            <div class="infont col-md-3 col-sm-4"><a href="#"><i class="fa fa-2x fa-facebook"></i></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="#"><i class="fa fa-2x fa-instagram"></i></a></div>
+                            <div class="infont col-md-3 col-sm-4"><a href="#"><i class="fa fa-2x fa-google-plus"></i></a></div>
+                           
                         </div>
 
                     </div>
@@ -52,15 +52,21 @@
         <!-- footer fim --> 
 
 
-
+        <script src="/js/bootstrap.min.js"                      type="text/javascript"></script>
+        <script src="/js/plugins/metisMenu/jquery.metisMenu.js" type="text/javascript"></script>
+        <script src="/js/plugins/slimscroll/slimscroll.js"      type="text/javascript"></script>
+        <script src="/js/inspinia.js"                           type="text/javascript"></script>
+        <script src="/js/plugins/pace/pace.min.js"              type="text/javascript"></script>
+        <script src="/notify/assets/js/mod_xhr.js"              type="text/javascript"></script>
+        <script src="/js/plugins/toastr/toastr.min.js"          type="text/javascript"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="js/all.min.js"></script>
     <!-- modal -->
-   <script type="text/javascript">
+  <!-- <script type="text/javascript">
     $('#myModal').on('shown.bs.modal', function () {
     $('#myInput').focus()
     })
-        </script>
+        </script> -->
 <!-- menu -->
   <script type="text/javascript">
     $(document).ready(function () {
@@ -70,23 +76,7 @@
     });
   </script>
   <!-- script para o menu responsivo fim -->
-  <!--teste navegação interna inicio -->
-  <script type="text/javascript">
-    $(document).ready(function () {
-    $(".page").css({
-    height: $(window).height(),
-    lineHeight: $(window).height() + "px"
-    });
-    $("nav a").click(function () {
-    theHref = $(this).attr("href");
-    $("html, body").animate({
-    scrollTop: $(theHref).offset().top
-    }, 500);
-    return false;
-    });
-    });
-  </script>
-  <!-- teste navegação interna fim -->
+ 
         </div>
     </div>
 </body>

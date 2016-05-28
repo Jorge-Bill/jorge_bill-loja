@@ -17,27 +17,73 @@ require_once("logica-usuario.php");
  		<p class="alert-success"> Você está logado como <?=usuarioLogado()?>. </p>
  		<p><a class="btn btn-danger" href="logout.php">Deslogar</a></p>
 <?php } else {?>
-    <h2 class="text-center"> Login </h2>
+    <h2 class="text-center animated fadeInRight"> Login </h2>
 	
-	<form class="form-inline col-md-offset-3 col-lg-offset-3" action="login.php" method="post">
+	<form class="form-inline col-md-offset-3 col-lg-offset-3 animated fadeInRight" action="login.php" method="post">
 	    
 	    <div class="form-group">	
-	    	<label>E-mail: </label>
-	    	<input class="form-control" type="email" name="email" >
+	    	<label>E-mail </label>
+	    	<input class="form-control" type="email" name="email" placeholder="E-mail" >
 	    </div>
 	    <div class="form-group">
 	    	<label>Senha: </label>
-	    	<input class="form-control" type="password" name="senha">
+	    	<input class="form-control" type="password" name="senha" placeholder="Senha">
 	    </div>
 	    
 	    	<button class="btn btn-warning">Login</button>
 	    
 	</form>
+
 	</div>
+
 <?php 	}?>
 </div>
 </div>
 </section>
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="ibox float-e-margins">
+                        
+                        <div class="ibox-content ">
+                            <div class="carousel slide" id="carousel2">
+                                <ol class="carousel-indicators">
+                                    <li data-slide-to="0" data-target="#carousel2"  class="active"></li>
+                                    <li data-slide-to="1" data-target="#carousel2"></li>
+                                    <li data-slide-to="2" data-target="#carousel2" class=""></li>
+                                </ol>
+                                <div class="carousel-inner">
+                                    <div class="item active">
+                                        <img alt="image"  class="img-responsive" src="img/p_big1.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit</p>
+                                        </div>
+                                    </div>
+                                    <div class="item ">
+                                        <img alt="image"  class="img-responsive" src="img/p_big3.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="image"  class="img-responsive" src="img/p_big2.jpg">
+                                        <div class="carousel-caption">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam hendrerit</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a data-slide="prev" href="#carousel2" class="left carousel-control">
+                                    <span class="icon-prev"></span>
+                                </a>
+                                <a data-slide="next" href="#carousel2" class="right carousel-control">
+                                    <span class="icon-next"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
 
  <article id="about" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
         <div class="container">
@@ -94,7 +140,14 @@ require_once("logica-usuario.php");
         </div>
     </article>
     <!-- about fim -->
-
+ 
+<div class="row"></div>
+<div class="ibox-footer">
+    <span class="pull-right">
+        Geek Space - <i class="fa fa-clock-o"></i> <?php echo date("d/m/y"); ?> 
+    </span>
+        <strong> "Size matters not. Look at me. Judge me by my size, do you? Hmm? Hmm. And well you should not."</strong>
+</div>
 
 <?php
     include("rodape.php");
