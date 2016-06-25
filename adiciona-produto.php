@@ -1,25 +1,35 @@
 <?php 
+print "<pre>";
+print_r ($_POST);
+print "</pre>";
 require_once("cabecalho.php");
 require_once("banco-produto.php");
 require_once("logica-usuario.php");
-
+require_once("Upload.class.php");
+//srequire_once("upload-img.php");
 verificaUsuario();
 
 $nome=$_POST["nome"];
 $preco=$_POST["preco"];
 $descricao=$_POST["descricao"];
 $categoria_id=$_POST["categoria_id"];
+
+//print $_POST["foto"];
+			
 if(array_key_exists('usado', $_POST)){
     $usado = "true";
 } else{
     $usado = "false";
 }
 
+	$upload = new Upload($_FILES['foto'], 500, 500, "img/produtos/");
+	$imagem=$upload->salvar();
+			
 
-if (insereProduto($conexao, $nome , $preco, $descricao,$categoria_id, $usado ) ){ ?>
+if (insereProduto($conexao, $nome , $preco, $descricao,$categoria_id, $usado, $imagem) ){ ?>
     <p class="text-success">Produto
-        <?= $nome;?>,
-            <?= $preco; ?> adicionado com sucesso!</p>
+        <?php print $nome;?>,
+            <?php print $preco; ?> adicionado com sucesso!</p>
     <?php }
 
 else {
@@ -27,8 +37,8 @@ else {
 
 ?>
         <p class="text-danger">Produto
-            <?= $nome;?> não foi adicionado:
-                <?= $msg ?>
+            <?php print $nome;?> não foi adicionado:
+                <?php print $msg ?>
         </p>
         <?php
 

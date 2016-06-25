@@ -38,7 +38,7 @@ require_once("banco-produto.php"); ?>
                         <div class="ibox-content product-box">
 
                             <div class="product-imitation">
-                               <img class=" img-circle img-responsive center-block" src="img/<?php print $produto['imagem']?>">
+                               <img width="250" height="252" class=" img-circle img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>">
                             </div>
                             <div class="product-desc">
                                 <span class="product-price">
@@ -54,7 +54,7 @@ require_once("banco-produto.php"); ?>
                                 </div>
                                 <div class="m-t text-righ">
 
-                                    <a href="produto-descricao.php?id=<?=$produto['id']?>" class="btn btn-primary btn-sm">Detalhes <i class="fa fa-long-arrow-right"></i> </a>
+                                    <a href="produto-descricao.php?id=<?php print $produto['id'];?>" class="btn btn-primary btn-sm">Detalhes <i class="fa fa-long-arrow-right"></i> </a>
                                 </div>
                             </div>
                         </div>

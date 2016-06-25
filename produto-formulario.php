@@ -4,7 +4,7 @@ require_once("banco-categoria.php");
 require_once("logica-usuario.php");
 
 verificaUsuario();
-    $produto = array ("nome" => "", "descricao" => "", "preco" => "", categoria => "1" );
+    $produto = array ("nome" => "", "descricao" => "", "preco" => "", categoria => "1", imagem => "" );
     $usado = "";
     $categorias = listaCategorias ($conexao);
 ?>
@@ -35,7 +35,7 @@ verificaUsuario();
 
 <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 animated fadeInRight">
     <br/>
-     <form action="adiciona-produto.php" method="post">
+     <form action="adiciona-produto.php" method="post" enctype="multipart/form-data">
         <div class="form-group">
            
            <?php include("produto-formulario-base.php"); ?>

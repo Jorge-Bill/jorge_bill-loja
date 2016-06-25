@@ -10,12 +10,12 @@
     <?php require_once("mostra-alerta.php"); ?>
     <?php error_reporting(E_ALL ^ E_NOTICE); ?>
 
-    <link href="/css/bootstrap.min.css"             rel="stylesheet">
-    <link href="/font-awesome/css/font-awesome.css" rel="stylesheet">
-    <link href="/css/animate.css"                   rel="stylesheet">
-    <link href="/css/style.css"                     rel="stylesheet">   
-    <link href="/css/plugins/chosen/chosen.css"     rel="stylesheet"> 
-    <link href="/css/plugins/toastr/toastr.min.css" rel="stylesheet"> 
+    <link href="css/bootstrap.min.css"             rel="stylesheet">
+    <link href="font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="css/animate.css"                   rel="stylesheet">
+    <link href="css/style.css"                     rel="stylesheet">   
+    <link href="css/plugins/chosen/chosen.css"     rel="stylesheet"> 
+    <link href="css/plugins/toastr/toastr.min.css" rel="stylesheet"> 
     <link href="css/estilos.css" rel="stylesheet" type="text/css">
     <link rel="shortcut icon" href="imagens/home-nav.png">
  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->

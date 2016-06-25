@@ -49,7 +49,7 @@ require_once("banco-produto.php");
 
                                         <div>
                                             <div class="image-imitation">
-                                                <img class=" img-circle img-responsive center-block" src="img/<?php print $produto['imagem']?>">
+                                                <img class=" img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>">
                                             </div>
                                         </div>
                                         
@@ -78,7 +78,7 @@ require_once("banco-produto.php");
                                     <div>
                                         <div class="btn-group">
                                             <a href="produto-lista.php" class="btn btn-white btn-sm">lista <i class="fa fa-long-arrow-left"></i> </a>
-                                            <a href="produto-altera-formulario.php?id=<?=$produto['id']?>" class="btn btn-warning btn-sm">Alterar <i class="fa fa-edit"></i></a>
+                                            <a href="produto-altera-formulario.php?id=<?php print $produto['id'];?>" class="btn btn-warning btn-sm">Alterar <i class="fa fa-edit"></i></a>
                                          <!--   <button class="btn btn-white btn-sm"><i class="fa fa-star"></i> Add to wishlist </button>
                                             <button class="btn btn-white btn-sm"><i class="fa fa-envelope"></i> Contact with author </button> -->
                                         </div>
