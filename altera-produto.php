@@ -3,9 +3,9 @@ require_once("cabecalho.php");
 require_once("banco-produto.php");
 require_once("Upload.class.php");
 
-print "<pre>";
+/*print "<pre>";
 print_r ($_POST);
-print "</pre>";
+print "</pre>";*/
 
 $id=$_POST["id"];
 $nome=$_POST["nome"];
@@ -18,9 +18,9 @@ if(array_key_exists('usado', $_POST)){
     $usado = "false";
 }
 
-$upload = new Upload($_FILES["foto"], 1000, 800, "img/produtos/");
+$upload = new Upload($_FILES['foto'], 400, 400, "img/produtos/");
 	$imagem=$upload->salvar();
-	echo $imagem."<br>";
+	//echo $imagem."<br>";
 
 if (alteraProduto($conexao, $id, $nome , $preco, $descricao,$categoria_id, $usado, $imagem) ){ ?>
     <p class="text-success">O Produto

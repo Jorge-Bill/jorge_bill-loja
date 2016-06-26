@@ -49,7 +49,7 @@ require_once("banco-produto.php");
 
                                         <div>
                                             <div class="image-imitation">
-                                                <img class=" img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>">
+                                                <img class="  img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>">
                                             </div>
                                         </div>
                                         

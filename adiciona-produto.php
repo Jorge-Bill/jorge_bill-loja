@@ -1,7 +1,7 @@
 <?php 
-print "<pre>";
+/*print "<pre>";
 print_r ($_POST);
-print "</pre>";
+print "</pre>";*/
 require_once("cabecalho.php");
 require_once("banco-produto.php");
 require_once("logica-usuario.php");

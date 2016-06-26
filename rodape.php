@@ -53,12 +53,12 @@
 
 
         <script src="/js/bootstrap.min.js"                      type="text/javascript"></script>
-        <script src="/js/plugins/metisMenu/jquery.metisMenu.js" type="text/javascript"></script>
-        <script src="/js/plugins/slimscroll/slimscroll.js"      type="text/javascript"></script>
+  <!--      <script src="/js/plugins/metisMenu/jquery.metisMenu.js" type="text/javascript"></script>
+        <script src="/js/plugins/slimscroll/slimscroll.js"      type="text/javascript"></script> -->
         <script src="/js/inspinia.js"                           type="text/javascript"></script>
-        <script src="/js/plugins/pace/pace.min.js"              type="text/javascript"></script>
+  <!--      <script src="/js/plugins/pace/pace.min.js"              type="text/javascript"></script>
         <script src="/notify/assets/js/mod_xhr.js"              type="text/javascript"></script>
-        <script src="/js/plugins/toastr/toastr.min.js"          type="text/javascript"></script>
+    <!--    <script src="/js/plugins/toastr/toastr.min.js"          type="text/javascript"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
      <script src="js/all.min.js"></script>
     <!-- modal -->

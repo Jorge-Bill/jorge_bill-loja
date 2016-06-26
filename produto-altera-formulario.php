@@ -54,7 +54,7 @@ if(array_key_exists("removido", $_GET) && $_GET["removido"]==true){
     <div class=" col-xs-12 col-sm-12 col-md-8 col-lg-8 animated fadeInRight">
 
     <div class="ibox-content">
-        <form class="form-horizontal" action="altera-produto.php" method="post">
+        <form class="form-horizontal" action="altera-produto.php" method="post" enctype="multipart/form-data">
         <!--    <h1>Alterar Produto</h1>    -->
             <input type="hidden" name="id" value="<?php print $produto['id'];?>">
                 <div class="form-group">

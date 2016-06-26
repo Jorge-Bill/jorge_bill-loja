@@ -17,7 +17,7 @@ function insereProduto($conexao, $nome, $preco, $descricao, $categoria_id, $usad
 
 function alteraProduto($conexao, $id, $nome, $preco, $descricao, $categoria_id, $usado, $imagem){
     $query = "update produtos set nome = '{$nome}', preco = {$preco}, descricao = '{$descricao}', categoria_id = {$categoria_id}, usado = '{$usado}', imagem='{$imagem}' where id = '{$id}'";
-	  echo $query;
+	//  echo $query;
     return mysqli_query($conexao, $query);
 }
 

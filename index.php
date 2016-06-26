@@ -41,7 +41,7 @@ require_once("logica-usuario.php");
 </div>
 </section>
 
-<!-- <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+<!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="ibox float-e-margins">
                         
                         <div class="ibox-content ">
@@ -82,7 +82,7 @@ require_once("logica-usuario.php");
                     </div>
                 </div>
 
-            </div> -->
+            </div>-->
 
 
  <article id="about" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">

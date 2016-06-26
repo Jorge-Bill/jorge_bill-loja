@@ -14,7 +14,9 @@
 		
 		private function getExtensao(){
 			//retorna a extensao da imagem	
-			return $extensao = strtolower(end(explode('.', $this->arquivo['name'])));
+			     $nomeExplodido = explode('.', $this->arquivo['name']);
+                 $ext = end($nomeExplodido);
+                 return strtolower($ext);
 		}
 		
 		private function ehImagem($extensao){
@@ -88,7 +90,7 @@
 				//pega a largura, altura, tipo e atributo da imagem
 				list($largura, $altura, $tipo, $atributo) = getimagesize($destino);
 
-				// testa se é preciso redimensionar a imagem
+				// testa se Ã© preciso redimensionar a imagem
 				if(($largura > $this->largura) || ($altura > $this->altura))
 					$this->redimensionar($largura, $altura, $tipo, $destino);
 			}

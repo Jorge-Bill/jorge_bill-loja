@@ -38,7 +38,7 @@ require_once("banco-produto.php"); ?>
                         <div class="ibox-content product-box">
 
                             <div class="product-imitation">
-                               <img width="250" height="252" class=" img-circle img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>">
+                               <img class=" img-circle img-responsive center-block" src="img/produtos/<?php print $produto['imagem']?>" width="300px" height="300px">
                             </div>
                             <div class="product-desc">
                                 <span class="product-price">
